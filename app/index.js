@@ -1,4 +1,4 @@
-'usee strict';
+'use strict';
 
 var express = require('express');
 var morgan = require('morgan');
