@@ -1,0 +1,17 @@
+hmtl
+  head
+    meta(charset='utf-8')
+    title Box party!
+    link(rel='stylesheet' href='css/box1.css')
+  body
+    h1 Design your boxes!
+    form(method='post', action='/boxes')
+      label # of Boxes
+      input(type='text', name='boxes', placeholder='How many boxes')
+      label Width
+      input(type='text', name='width', placeholder='e.g. 10-15')
+      label Height
+      input(type='text', name='height', placeholder='e.g. 10-15')
+      label Colors
+      textarea( name='colors')
+      button Make some boxes!

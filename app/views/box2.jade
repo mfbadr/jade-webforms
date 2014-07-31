@@ -1,0 +1,7 @@
+html
+  head
+  body
+    h1
+      a(href = '/boxes') make more boxes
+    each box in boxes
+      div(style="display:inline-block;width:#{box.width};height:#{box.height};background-color:#{box.color}")
