@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Jade/Web Forms
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1.a.b.c#d.e Hello, Jade!
+    h1= Math.pow(8,2)
+    // You can see this
+    //- you cant see this
+    #a
+      //creating .div tags with classes and ids is very easy in jade!
+      #b
+        #c
+          .a
+            .b
+
+    - var x = 3, y = 2
+    h2= x * y
+    h2 This is an h2!
+    - var colors = ['blue', 'green', 'yellow', 'pink']
+    //looping through arrays is easy in Jade!
+    each color in colors 
+      //lets create a div for each color
+      if color === 'green'
+        h2 i love green
+      else 
+        h2 not green!
+      //here's how you use variables inside of strings
+      .color(style="color:#{color}")= color  
+    section
+      article
+        h3 header 3
+        p paragraph1
+        p
+          | this is paragraph2
+          span more text
+          | and more text
+          span final text
+          a(href="#") dead link
+          span hello world
