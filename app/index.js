@@ -16,7 +16,7 @@ app.use(express.static(__dirname + '/static'));
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.get('/', function (req, res){
-  res.render('home');
+  res.render('box1');
 });
 
 app.get('/calc', function (req, res){
